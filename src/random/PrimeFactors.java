@@ -22,7 +22,12 @@ public class PrimeFactors {
             }
         }
 
-        if (number > 2) {
+        //Note that number cannot be 2 because we have removed all
+        //2s in the first while loop.
+        //Hence, number > 1 check is sufficient.
+        //It arises when the original number itself is prime, or it has
+        //one larger prime factor greater than sqrt(number). 
+        if (number > 1) {
             System.out.println(number);
         }
 
